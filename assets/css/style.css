@@ -12,7 +12,7 @@ body {
 }
 
 .home {
-  background: #000;
+  background: #000;section-container
   color: #fff;
   text-align: center;
   padding: 100px 20px;
@@ -157,21 +157,53 @@ body {
 
 .section-container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  gap: 20px;
-  align-items: start;
+  grid-template-columns: 25% 75%;
+  gap: 30px;
+  align-items: flex-start;
+  margin-bottom: 50px;;
+}
+
+.section-left {
+  text-align: left;
+  padding-right: 10px;
 }
 
 .section-left h2 {
-  font-size: 32px;
-  font-weight: 700;
-  color: #d7e9f7;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #00bfff; /* biru terang */
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.section-right {
+  text-align: left;
 }
 
 .section-right h3 {
+  margin-top: 0;
   font-size: 18px;
-  font-weight: 700;
-  margin: 10px 0;
+  color: #fff;
+}
+
+.section-right p {
+  margin: 5px 0 15px 0;
+  color: #ccc;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.section-right ul {
+  margin: 0 0 20px 20px;
+  padding: 0;
+  color: #ddd;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.section-right li {
+  margin-bottom: 6px;
 }
 
 .section-right ul {
@@ -271,13 +303,6 @@ section {
 section {
   margin-bottom: 0px;
   border: none;   
-}
-
-/* Default untuk semua section */
-.section-right {
-  font-size: 16px;
-  line-height: 1.8;
-  display: block;
 }
 
 /* Experience */
