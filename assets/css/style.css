@@ -334,8 +334,9 @@ section {
 
 /* Skills */
 #skills .section-container {
-  display: block;
-  text-align: left;
+  display: grid;
+  grid-template-columns: 25% 75%;
+  gap: 30px;
 }
 
 #skills .section-right .icon {
