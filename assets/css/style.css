@@ -297,27 +297,6 @@ html {
   scroll-padding-top: 100px;
 }
 
-.section {
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  gap: 30px;
-  padding: 60px 20px;
-  border-bottom: 1px solid #333;
-}
-.section-content {
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.section-content ul {
-  padding-left: 20px;
-}
-
-.section-content .icon {
-  color: #00ffcc;
-  margin-bottom: 10px;
-}
-
 /* Experience */
 #experience .section-right {
   display: flex;
