@@ -1,76 +1,284 @@
-/* ====== GLOBAL STYLE ====== */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #111;
-  color: #ddd;
+/* Reset & Global */
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Roboto Mono', monospace;
+  background-color: #111;
+  color: #e6e6e6;
   line-height: 1.6;
 }
 
-a {
+.home {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.home h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.home h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
   color: #00ffcc;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #000; /* biar sesuai tema */
+  z-index: 1000;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: box-shadow 0.3s ease;
+}
+
+/* kasih shadow pas scroll biar lebih modern */
+.navbar.scrolled {
+  box-shadow: 0 4px 12px rgba(0,0,0,0.6);
+}
+
+/* kasih jarak konten supaya tidak ketiban header */
+body {
+  padding-top: 100px; /* sesuaikan tinggi header */
+}
+
+/* smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+.logo {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+.nav-right a {
+  color: #e6e6e6;
+  text-decoration: none;
+  font-size: 14px;
+}
+.btn-outline {
+  border: 1px solid #e6e6e6;
+  color: #e6e6e6;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 0 20px;
+  transition: 0.3s;
+}
+.btn-outline:hover {
+  background: #00ff99;
+  color: #111;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  padding: 80px 5%;
+  gap: 60px;
+}
+.hero-left img {
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  border: 4px solid #333;
+}
+.hero-right .name {
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.hero-right .title {
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 25px;
+}
+.buttons {
+  display: flex;
+  gap: 20px;
+}
+.btn-primary {
+  background: #00ff99;
+  color: #111;
+  padding: 12px 22px;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 700;
+  transition: 0.3s;
+}
+.btn-primary:hover {
+  background: #00e689;
+}
+
+/* === ABOUT SECTION === */
+.about-section {
+  background-color: #1c1c1c; /* hitam gelap */
+  color: #fff;
+  padding: 80px 10%;
+  font-family: 'Courier New', monospace; /* font monospaced mirip web aslinya */
+}
+
+.about-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.about-left h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #d7e9f7; /* biru muda */
+}
+
+.about-right {
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.about-icon {
+  color: #00ffcc; /* hijau neon */
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* === SECTIONS DARK STYLE === */
+.section-dark {
+  background-color: #1c1c1c;
+  color: #fff;
+  padding: 80px 10%;
+  font-family: 'Courier New', monospace;
+}
+
+.section-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.section-left h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #d7e9f7;
+}
+
+.section-right {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.section-right h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.section-right ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.icon {
+  color: #00ffcc;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact {
+  background: #1c1c1c;
+  color: #fff;
+  text-align: left;
+  padding: 60px 20px;
+}
+
+.contact h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.contact .arrow {
+  color: #00ffcc;
+  margin-left: 10px;
+}
+
+.contact-info {
+  margin-bottom: 30px;
+}
+
+.contact-info p {
+  margin: 5px 0;
+  font-size: 1rem;
+}
+
+.contact-info a {
+  color: #fff;
   text-decoration: none;
 }
 
-a:hover {
-  text-decoration: underline;
+.contact .social-links {
+  margin-top: 20px;
 }
 
-/* ====== SECTION LAYOUT ====== */
-.section-row {
-  display: flex;
-  align-items: flex-start;
-  margin: 40px 20px;
-  border-bottom: 1px solid #222;
-  padding-bottom: 20px;
-}
-
-.section-title {
-  flex: 0 0 200px;       /* lebar tetap untuk kolom kiri */
-  font-size: 20px;
-  font-weight: bold;
-  color: #00ffcc;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.section-content {
-  flex: 1;
-  font-size: 16px;
-  color: #ddd;
-}
-
-/* ====== SUBHEADINGS DAN LIST ====== */
-.section-content h3 {
-  font-size: 18px;
-  font-weight: bold;
-  margin: 10px 0 5px;
+.contact .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px;
+  border: 1px solid #fff;
   color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
 }
 
-.section-content p {
-  margin: 5px 0 15px;
+.contact .btn:hover {
+  background: #00ffcc;
+  color: #000;
 }
 
-.section-content ul {
-  list-style: disc;
-  margin: 5px 0 15px 20px;
-  padding: 0;
+footer {
+  margin-top: 40px;
+  font-size: 0.85rem;
+  color: #aaa;
+  text-align: center;
 }
 
-.section-content li {
-  margin-bottom: 8px;
+.typing {
+  color: #ffffff;
+  font-weight: bold;
+}
+.typed-cursor {
+  font-size: 1.5rem;
+  color: #fbfffe;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
-/* ====== RESPONSIVE ====== */
-@media (max-width: 768px) {
-  .section-row {
-    flex-direction: column;
-  }
-
-  .section-title {
-    flex: unset;
-    margin-bottom: 10px;
-  }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 100px; /* sesuaikan tinggi header freeze */
+}
+section {
+  scroll-margin-top: 100px; /* biar saat refresh juga offsetnya pas */
 }
