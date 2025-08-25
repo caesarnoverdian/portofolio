@@ -277,3 +277,17 @@ section {
   margin-bottom: 0px;
   border: none;   
 }
+
+.section-right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px; /* jarak antar pengalaman */
+}
+
+.experience-item {
+  margin-bottom: 20px;
+}
+
+.experience-item h3 {
+  margin-top: 5px;
+}
