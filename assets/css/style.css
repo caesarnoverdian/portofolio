@@ -291,3 +291,16 @@ section {
 .experience-item h3 {
   margin-top: 5px;
 }
+/* Atur jarak antar item education */
+.education .resume-item {
+  margin-bottom: 15px;  /* perkecil dari default (biasanya 30px atau lebih) */
+  padding: 0;
+}
+
+/* Atur jarak antar text di dalam education */
+.education .resume-item p,
+.education .resume-item h4,
+.education .resume-item h5 {
+  margin: 3px 0;  /* rapatkan text */
+  line-height: 1.4; /* biar tetap terbaca jelas */
+}
