@@ -151,14 +151,14 @@ body {
 .section-dark {
   background-color: #1c1c1c;
   color: #fff;
-  padding: 80px 10%;
+  padding: 60px 10%;
   font-family: 'Courier New', monospace;
 }
 
 .section-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  gap: 40px;
+  gap: 20px;
   align-items: start;
 }
 
@@ -287,22 +287,34 @@ section {
   gap: 40px;
 }
 
+#experience .experience-item {
+  margin-bottom: 30px;
+}
+
 /* Education */
 #education .section-right {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 #education .section-right p,
 #education .section-right h3 {
-  margin: 2px 0;
-  line-height: 1.4;
+  margin: 4px 0;
+}
+
+#education .section-container {
+  grid-template-columns: 200px 1fr;
 }
 
 /* Skills */
 #skills .section-container {
   display: block;
   text-align: left;
+}
+
+#skills .section-right .icon {
+  margin-bottom: 8px;
 }
 
 #skills .section-right h3 {
