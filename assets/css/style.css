@@ -171,6 +171,7 @@ body {
 .section-right {
   font-size: 16px;
   line-height: 1.8;
+  display: block;
 }
 
 .section-right h3 {
@@ -303,4 +304,23 @@ section {
 .education .resume-item h5 {
   margin: 3px 0;  /* rapatkan text */
   line-height: 1.4; /* biar tetap terbaca jelas */
+}
+
+#experience .section-right {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Khusus untuk Education */
+#education .section-right {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+#education .section-right p,
+#education .section-right h3 {
+  margin: 3px 0;
+  line-height: 1.4;
 }
