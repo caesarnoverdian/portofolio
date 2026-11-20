@@ -110,8 +110,8 @@ html {
   border: 4px solid #333 !important;
 }
 
-.hero-right {
-  margin-top: 30px !important;
+.hero-right .buttons {
+  transform: translateY(30px) !important
 }
 
 /* Tampilan HP */
