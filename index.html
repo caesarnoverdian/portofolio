@@ -4,69 +4,76 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Rizki Noverdian – Portfolio</title>
+
   <link rel="stylesheet" href="assets/css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Typed.js -->
-<!-- Typed.js -->
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-<script>
-  document.addEventListener("DOMContentLoaded", function() {
-    var typed = new Typed(".typing", {
-      strings: ["IT Specialist", "IT Infrastructure", "Electrical Engineering"],
-      typeSpeed: 80,
-      backSpeed: 40,
-      loop: true,
-      showCursor: true,
-      cursorChar: "|"
-    });
-  });
-</script>
-<script>
-  window.addEventListener("scroll", function() {
-    const header = document.querySelector(".navbar");
-    header.classList.toggle("scrolled", window.scrollY > 10);
-  });
-</script>
 
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var typed = new Typed(".typing", {
+        strings: ["IT Specialist", "IT Infrastructure", "Electrical Engineering"],
+        typeSpeed: 80,
+        backSpeed: 40,
+        loop: true,
+        showCursor: true,
+        cursorChar: "|"
+      });
+    });
+
+    window.addEventListener("scroll", function() {
+      const header = document.querySelector(".navbar");
+      header.classList.toggle("scrolled", window.scrollY > 10);
+    });
+  </script>
 </head>
+
 <body>
   <header class="navbar">
     <div class="logo">RIZKI<br>CAESAR<br>NOVERDIAN</div>
     <a href="#contact" class="btn-outline">GET IN TOUCH ↗</a>
-    <nav class="nav-right"><a href="#home">Home</a></nav>
+    <nav class="nav-right">
+      <a href="#home">Home</a>
+    </nav>
   </header>
 
-<section class="hero" id="home">
-  <div class="hero-left">
-    <img src="assets/img/Foto Rizki Caesar N (1).jpg" alt="Profile Photo">
-  </div>
-  <div class="hero-right">
-    <h2 class="name">RIZKI CAESAR NOVERDIAN</h2>
-    <h1 class="title"><span class="typing"></span></h1> <!-- animasi typing -->
-    <div class="buttons">
-      <a href="resume.pdf" class="btn-outline">DOWNLOAD RESUME ⬇</a>
+  <section class="hero" id="home">
+    <div class="hero-left">
+      <img src="assets/img/Foto Rizki Caesar N (1).jpg" alt="Profile Photo">
     </div>
-  </div>
-</section>
+
+    <div class="hero-right">
+      <h2 class="name">RIZKI CAESAR NOVERDIAN</h2>
+      <h1 class="title"><span class="typing"></span></h1>
+
+      <div class="buttons">
+        <a href="resume.pdf" class="btn-outline">DOWNLOAD RESUME ⬇</a>
+      </div>
+    </div>
+  </section>
 
 <section id="about" class="about-section">
   <div class="about-container">
-    <!-- KIRI -->
     <div class="about-left">
       <h2>ABOUT</h2>
     </div>
-    <!-- KANAN -->
+
     <div class="about-right">
       <div class="about-icon">❮❯</div>
       <p>
-        IT Support professional with over 10 years of experience in daily IT operations, troubleshooting Windows, Apple, network, and printer devices. Skilled in managing servers, cloud infrastructure, security systems, corporate email, Avaya PABX, CCTV, and Access Door systems. Experienced in user issue diagnostics, Apple/Windows device deployment, routine maintenance, technical documentation, and corporate website management. Supported by a strong Electrical Engineering background in installation, maintenance, and repair of electrical systems and components.
-
+        IT Support professional with over 10 years of experience
+in IT operations, technical support, and infrastructure
+management. Skilled in Windows, macOS, networking,
+server administration, Microsoft 365, CCTV, and IT
+asset management. Experienced in troubleshooting,
+system maintenance, and corporate website management.
+Also supported by an Electrical Engineering background.
       </p>
     </div>
   </div>
 </section>
 
-<!-- SKILLS -->
 <section id="skills" class="section-dark">
   <div class="section-container">
     <div class="section-left">
@@ -77,18 +84,20 @@
       <h3>Areas of Expertise</h3>
       <ul>
         <li>IT Support & Help Desk</li>
-        <li>IT Service Management</li>
-        <li>IT Asset Managementt</li> 
-        <li>Software and Hardware Troubleshooting</li>
+        <li>IT Service Management (ITSM)</li>
+        <li>IT Asset Management</li>
+        <li>Hardware & Software Troubleshooting</li>
         <li>Windows & macOS Administration</li>
-        <li>Infrastructure Project Support</li>
-        <li>On-site and Remote Support</li>
-        <li>Firewall and IT Security Management</li>
-        <li>Windows, Linux, and Mac Environment</li>
-        <li>Operating Systems: Windows, Linux, macOS</li>
-        <li>Maintaining and designing corporate websites</li>
-        <li>Network Troubleshooting (LAN/WAN, TCP/IP, DNS, DHCP)</li>
-        <li>Electrical Installation & Maintenance </li>
+        <li>Windows Server & Microsoft 365</li>
+        <li>Network Infrastructure (LAN/WAN)</li>
+        <li>TCP/IP, DNS, DHCP</li>
+        <li>MikroTik Configuration</li>
+        <li>Firewall & IT Security</li>
+        <li>Synology NAS Administration</li>
+        <li>CCTV & Access Control Systems</li>
+        <li>Linux & VPS Management</li>
+        <li>Corporate Website Development</li>
+        <li>Electrical Installation & Maintenance</li>
       </ul>
     </div>
   </div>
@@ -193,12 +202,9 @@
     <div class="section-right">
       <div class="icon">❮❯</div>
       <ul>
-        <li>CompTIA A+ Certification</li>
-        <li>Cisco Certified Network Associate (CCNA)</li>
-        <li>Microsoft Certified: Azure Fundamentals</li>
         <li>ITIL v4 Foundation</li>
       </ul>
-    </div>
+    </div
   </div>
 </section>
 
