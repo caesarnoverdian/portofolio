@@ -382,3 +382,48 @@ section {
     gap: 35px;
   }
 }
+
+/* === PROJECTS SECTION === */
+
+#projects .project-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+#projects .project-item {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #333;
+}
+
+#projects .project-item h3 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+#projects .project-item p {
+  margin-bottom: 12px;
+}
+
+#projects .project-item a {
+  display: inline-block;
+  color: #00ffcc;
+  text-decoration: none;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#projects .project-item a:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  #projects .section-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  #projects .section-left h2 {
+    font-size: 26px;
+  }
+}
