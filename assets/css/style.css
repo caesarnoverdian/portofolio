@@ -282,3 +282,62 @@ html {
 section {
   scroll-margin-top: 100px; /* biar saat refresh juga offsetnya pas */
 }
+
+/* === WORK EXPERIENCE LAYOUT === */
+
+#experience .section-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 40px;
+  align-items: start;
+}
+
+#experience .experience-list {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  width: 100%;
+}
+
+#experience .experience-item {
+  width: 100%;
+}
+
+#experience .experience-item .icon {
+  color: #00ffcc;
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+#experience .experience-item > p {
+  margin-bottom: 15px;
+}
+
+#experience .experience-item h3 {
+  margin: 10px 0 15px;
+}
+
+#experience .experience-item ul {
+  margin-left: 20px;
+  padding-left: 0;
+}
+
+#experience .experience-item li {
+  margin-bottom: 5px;
+}
+
+/* Responsive untuk HP */
+@media (max-width: 768px) {
+  #experience .section-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  #experience .section-left h2 {
+    font-size: 26px;
+  }
+
+  #experience .experience-list {
+    gap: 35px;
+  }
+}
