@@ -427,3 +427,26 @@ section {
     font-size: 26px;
   }
 }
+
+/* === PROJECT WEBSITE IMAGE === */
+
+#projects .project-item a {
+  display: block;
+  margin-top: 20px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+#projects .project-item .project-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #333;
+  border-radius: 8px;
+  transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+#projects .project-item a:hover .project-image {
+  transform: scale(1.02);
+  opacity: 0.85;
+}
